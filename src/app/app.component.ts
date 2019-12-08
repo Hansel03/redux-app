@@ -4,10 +4,7 @@ import {
   IncrementarAction,
   DecrementarAction
 } from "./contador/contador.actions";
-
-interface AppState {
-  contador: number;
-}
+import { AppState } from "./app.reducers";
 
 @Component({
   selector: "app-root",
