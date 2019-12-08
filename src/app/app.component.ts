@@ -18,9 +18,9 @@ export class AppComponent {
   public contador: number;
 
   constructor(private store: Store<AppState>) {
-    this.store.select("contador").subscribe(contador => {
-      this.contador = contador;
-    });
+    this.store
+      .select("contador")
+      .subscribe(contador => (this.contador = contador));
   }
 
   public incrementar() {
